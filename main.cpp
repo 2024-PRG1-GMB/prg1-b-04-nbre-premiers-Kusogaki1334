@@ -42,4 +42,5 @@ int main() {
         std::cin  >> user_choice;
 
     } while (user_choice == 'O' || user_choice == 'o'); // Recommence si l'utilisateur entre 'O' ou 'o'
+    return 0;
 }
