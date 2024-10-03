@@ -19,7 +19,7 @@ int main() {
         } while (user_number < 2 || user_number > 1000);
 
         // Sélectionne tous les nombres entre 2 et user_number
-        std::cout << "Voici la liste des nombres premiers" << std::endl;
+        std::cout << "Voici la liste des nombres premiers :" << std::endl;
 
         for (int i = 2; i <= user_number; i++) {
             int divisor_number = 0;  // Réinitialisation du nombre de diviseurs pour chaque nombre i
@@ -37,9 +37,12 @@ int main() {
             }
         }
 
-        // Demander à l'utilisateur s'il veut recommencer
-        std::cout << "\nVoulez-vous recommencer ? [O/N] : ";
-        std::cin  >> user_choice;
+        do{
+            // Demander à l'utilisateur s'il veut recommencer
+            std::cout << "\nVoulez-vous recommencer ? [O/N] : ";
+            std::cin  >> user_choice;
+        }while ( user_choice != 'O' && user_choice != 'o' && user_choice != 'N' && user_choice != 'n');
+
 
     } while (user_choice == 'O' || user_choice == 'o'); // Recommence si l'utilisateur entre 'O' ou 'o'
     return 0;
