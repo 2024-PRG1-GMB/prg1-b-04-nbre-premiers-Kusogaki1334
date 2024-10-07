@@ -1,6 +1,6 @@
 //
 // Auteur : Grégoire Rista
-// Date : 2021-09-14
+// Date : 2024-09-14
 // Description : Programme qui affiche la liste des nombres premiers entre 2 et un nombre saisi par l'utilisateur
 //
 #include <iostream>
